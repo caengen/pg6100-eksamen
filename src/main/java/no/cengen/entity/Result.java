@@ -19,16 +19,16 @@ public class Result {
     private int id;
     @NotNull
     @Min(1)
-    private int winner;
+    private Integer winner;
     @NotNull
     @Min(1)
-    private int loser;
+    private Integer loser;
 
     public Result() {
 
     }
 
-    public Result(int winner, int loser) {
+    public Result(Integer winner, Integer loser) {
         this.winner = winner;
         this.loser = loser;
     }
@@ -41,7 +41,7 @@ public class Result {
         return winner;
     }
 
-    public void setWinner(int winner) {
+    public void setWinner(Integer winner) {
         this.winner = winner;
     }
 
@@ -49,7 +49,7 @@ public class Result {
         return loser;
     }
 
-    public void setLoser(int loser) {
+    public void setLoser(Integer loser) {
         this.loser = loser;
     }
 

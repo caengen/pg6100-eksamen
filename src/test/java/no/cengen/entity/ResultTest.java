@@ -42,13 +42,18 @@ public class ResultTest {
     }
 
     @Test
-    public void violations_result() {
-        Result result = new Result();
-        Set<ConstraintViolation<Result>> violations = validator.validate(result);
-        assertThat(violations.size(), is(2));
+    public void nullViolations_forWinner() {
+        Set<ConstraintViolation<Result>> violations = validator.validate(newTestResult(null, 3));
+        assertThat(violations.size(), is(1));
     }
 
-    private Result newTestResult(int winner, int loser) {
+    @Test
+    public void nullViolations_forLoser() {
+        Set<ConstraintViolation<Result>> violations = validator.validate(newTestResult(3, null));
+        assertThat(violations.size(), is(1));
+    }
+
+    private Result newTestResult(Integer winner, Integer loser) {
         Result result = new Result();
         result.setWinner(winner);
         result.setLoser(loser);
