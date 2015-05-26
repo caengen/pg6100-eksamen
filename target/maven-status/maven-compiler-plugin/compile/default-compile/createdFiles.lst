@@ -1,0 +1,14 @@
+no/cengen/external/service/Team.class
+no/cengen/external/service/TeamResponse.class
+no/cengen/external/service/SOAPException.class
+no/cengen/external/service/GameResponse.class
+no/cengen/external/service/Team$Players.class
+no/cengen/external/service/GameResponse$Games.class
+no/cengen/external/service/SOAPException_Exception.class
+no/cengen/external/service/EsportService_Service.class
+no/cengen/external/service/ObjectFactory.class
+no/cengen/external/service/package-info.class
+no/cengen/infrastructure/EsportDto.class
+no/cengen/external/service/EsportService.class
+no/cengen/external/service/TeamResponse$Teams.class
+no/cengen/service/ApplicationConfig.class
