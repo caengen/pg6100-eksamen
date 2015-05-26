@@ -33,7 +33,7 @@ public class H2Setup implements TestRule {
     private void startDb() throws SQLException {
         server = Server.createTcpServer();
         server.start();
-        factory = Persistence.createEntityManagerFactory("nith");
+        factory = Persistence.createEntityManagerFactory("cengen");
         entityManager = factory.createEntityManager();
     }
 

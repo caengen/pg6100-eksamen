@@ -22,4 +22,7 @@ public class EsportDto {
         TeamResponse response = port.getTeams(AppConfig.CALLER_ID, game);
         return response.getTeams().getTeam();
     }
+
+    //TODO: test throws exception with invalid CALLER_ID - BOTH CASES
+    //TODO: test NO TEAMS with invalid GAME - getTeams CASE
 }
