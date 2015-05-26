@@ -19,7 +19,7 @@ public class TeamServiceIT {
 
     @Test
     public void getTeam() throws Exception {
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/teams/game/Hearthstone").request().get();
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/teams/game/Hearthstone").request().get();
         assertEquals(HttpResponseCodes.SC_OK, response.getStatus());
 
         List<Team> teams = response.readEntity(new GenericType<List<Team>>() {
@@ -28,7 +28,7 @@ public class TeamServiceIT {
     }
 
     public void getTeam_NoTeams() throws Exception {
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/teams/game/asihflfa").request().get();
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/teams/game/asihflfa").request().get();
         assertEquals(HttpResponseCodes.SC_OK, response.getStatus());
 
         List<Team> teams = response.readEntity(new GenericType<List<Team>>() {
@@ -38,7 +38,7 @@ public class TeamServiceIT {
 
     @Test
     public void getAllTeams() throws Exception {
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/teams").request().get();
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/teams").request().get();
         assertEquals(HttpResponseCodes.SC_OK, response.getStatus());
 
         List<Team> teams = response.readEntity(new GenericType<List<Team>>() {

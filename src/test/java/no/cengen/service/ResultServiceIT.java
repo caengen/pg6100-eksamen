@@ -22,7 +22,7 @@ public class ResultServiceIT {
 
     @Test
     public void getAllResults() throws Exception {
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/results").request().get();
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/results").request().get();
         assertThat(HttpResponseCodes.SC_OK, is(equalTo(response.getStatus())));
 
         List<Result> results = response.readEntity(new GenericType<List<Result>>(){});
@@ -31,27 +31,27 @@ public class ResultServiceIT {
 
     @Test
     public void getResult() throws Exception {
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/results/id/1").request().get();
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/results/id/1").request().get();
         assertThat(HttpResponseCodes.SC_OK, is(equalTo(response.getStatus())));
 
         Result result = response.readEntity(Result.class);
-        assertThat(result.getWinner(), is(1));
-        assertThat(result.getLoser(), is(2));
+        assertThat(result.getWinner(), is(9));
+        assertThat(result.getLoser(), is(10));
     }
 
     @Test
     public void getResultByTeam() throws Exception {
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/results/team/2").request().get();
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/results/team/id/9").request().get();
         assertThat(HttpResponseCodes.SC_OK, is(equalTo(response.getStatus())));
 
         List<Result> results = response.readEntity(new GenericType<List<Result>>(){});
-        assertTrue(results.size() >= 4);
+        assertTrue(results.size() >= 2);
     }
 
     @Test
     public void createResult() throws Exception {
         Result result = new Result(3, 5);
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/results").request()
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/results").request()
                 .post(Entity.entity(result, MediaType.APPLICATION_JSON_TYPE));
         assertEquals(HttpResponseCodes.SC_CREATED, response.getStatus());
     }
@@ -59,7 +59,7 @@ public class ResultServiceIT {
     @Test
     public void invalid_createResult() throws Exception {
         Result result = new Result(-1, 4);
-        Response response = ClientBuilder.newClient().target(BASE_URL + "/results").request()
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/api/results").request()
                 .post(Entity.entity(result, MediaType.APPLICATION_JSON_TYPE));
         assertEquals(HttpResponseCodes.SC_BAD_REQUEST, response.getStatus());
     }
