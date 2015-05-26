@@ -4,6 +4,7 @@ import no.cengen.entity.Result;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import java.util.List;
 
@@ -11,6 +12,7 @@ import java.util.List;
 public class ResultDao {
     private EntityManager em;
 
+    @PersistenceContext
     public void setEntityManager(EntityManager entityManager) {
         this.em = entityManager;
     }

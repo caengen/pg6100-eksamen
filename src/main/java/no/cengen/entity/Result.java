@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlRootElement;
         @NamedQuery(name = "Result.findAllByTeam",
                 query = "select r from Result r where r.winner like :teamId or r.loser like :teamId")
 })
-
 @XmlRootElement
 public class Result {
     @Id

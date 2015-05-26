@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: no.cengen.service.GameServiceIT
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.231 sec - in no.cengen.service.GameServiceIT
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.958 sec - in no.cengen.service.GameServiceIT
