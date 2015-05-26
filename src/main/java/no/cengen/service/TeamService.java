@@ -19,6 +19,7 @@ public class TeamService {
     public Response getTeams(@PathParam("game") String game) {
         return Response.ok(esportDto.getTeams(game)).build();
     }
+
     //TODO: fix exception handlingen
     @GET
     public Response getAllTeams() {
