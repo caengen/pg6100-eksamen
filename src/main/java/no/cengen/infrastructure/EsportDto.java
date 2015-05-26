@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
+//TODO: feil bruk av dto
 public class EsportDto {
     private EsportService_Service service;
     private EsportService port;

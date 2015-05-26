@@ -1,4 +1,5 @@
 no/cengen/service/TeamService.class
+no/cengen/controller/AdminPanelController.class
 no/cengen/entity/Team.class
 no/cengen/infrastructure/TeamDao.class
 no/cengen/soap/service/GameResponse$Games.class
