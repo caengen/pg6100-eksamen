@@ -50,11 +50,17 @@ public class ResultServiceIT {
 
     @Test
     public void createResult() throws Exception {
-        Result result = new Result();
-        result.setLoser(5);
-        result.setWinner(3);
+        Result result = new Result(3, 5);
         Response response = ClientBuilder.newClient().target(BASE_URL + "/results").request()
                 .post(Entity.entity(result, MediaType.APPLICATION_JSON_TYPE));
         assertEquals(HttpResponseCodes.SC_CREATED, response.getStatus());
+    }
+
+    @Test
+    public void invalid_createResult() throws Exception {
+        Result result = new Result(-1, 4);
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/results").request()
+                .post(Entity.entity(result, MediaType.APPLICATION_JSON_TYPE));
+        assertEquals(HttpResponseCodes.SC_BAD_REQUEST, response.getStatus());
     }
 }

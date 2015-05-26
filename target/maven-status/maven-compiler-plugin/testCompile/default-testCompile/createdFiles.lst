@@ -3,6 +3,7 @@ no/cengen/infrastructure/EsportDtoTest.class
 no/cengen/infrastructure/ResultDaoTest.class
 no/cengen/service/TestConstants.class
 no/cengen/service/ResultServiceIT$1.class
+no/cengen/entity/ResultTest.class
 no/cengen/service/TeamServiceIT.class
 no/cengen/service/GameServiceIT.class
 no/cengen/service/GameServiceIT$1.class

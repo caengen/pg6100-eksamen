@@ -1,7 +1,8 @@
 package no.cengen.entity;
 
-import javax.inject.Named;
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @Entity
@@ -16,11 +17,20 @@ public class Result {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "SEQ_RESULT")
     private int id;
-    private int winner; //TODO: burde ikke kunne være 0
-    private int loser; //TODO: burde ikke kunne være 0
+    @NotNull
+    @Min(1)
+    private int winner;
+    @NotNull
+    @Min(1)
+    private int loser;
 
     public Result() {
 
+    }
+
+    public Result(int winner, int loser) {
+        this.winner = winner;
+        this.loser = loser;
     }
 
     public int getId() {

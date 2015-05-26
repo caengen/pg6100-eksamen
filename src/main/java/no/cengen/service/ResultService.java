@@ -4,6 +4,7 @@ import no.cengen.entity.Result;
 import no.cengen.infrastructure.ResultDao;
 
 import javax.inject.Inject;
+import javax.validation.Valid;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
@@ -38,7 +39,7 @@ public class ResultService {
     }
 
     @POST
-    public Response createResult(Result result) {
+    public Response createResult(@Valid Result result) {
         resultDao.persist(result);
         URI uri = uriInfo.getAbsolutePathBuilder().path("id/" + result.getId()).build();
         return Response.created(uri).build();
