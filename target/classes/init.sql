@@ -1,7 +1,11 @@
-insert into Result (Id, Winner, Loser) values(1, 1, 2);
-insert into Result (Id, Winner, Loser) values(2, 5, 1);
-insert into Result (Id, Winner, Loser) values(3, 2, 4);
-insert into Result (Id, Winner, Loser) values(4, 4, 3);
-insert into Result (Id, Winner, Loser) values(5, 6, 2);
+insert into Result (Id, Winner, Loser) values(1, 9, 10);
+insert into Result (Id, Winner, Loser) values(2, 9, 10);
+insert into Result (Id, Winner, Loser) values(3, 10, 9);
+insert into Result (Id, Winner, Loser) values(4, 2, 3);
+insert into Result (Id, Winner, Loser) values(5, 2, 4);
 insert into Result (Id, Winner, Loser) values(6, 2, 6);
-insert into Result (Id, Winner, Loser) values(7, 7, 3);
+insert into Result (Id, Winner, Loser) values(7, 3, 6);
+insert into Result (Id, Winner, Loser) values(8, 3, 5);
+insert into Result (Id, Winner, Loser) values(9, 7, 8);
+insert into Result (Id, Winner, Loser) values(10, 7, 4);
+insert into Result (Id, Winner, Loser) values(11, 7, 1);

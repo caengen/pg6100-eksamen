@@ -7,7 +7,7 @@
     <div>
         <h1>Match Results</h1>
         <ui:repeat value="#{adminPanelController.games}" var="game">
-            <p align="center"><b>#{game}</b></p>
+            <strong>#{game}</strong>
             <h:dataTable value="#{adminPanelController.getTeams(game)}" var="result">
                 <h:column>
                     <f:facet name="header">Id</f:facet>

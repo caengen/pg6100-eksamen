@@ -27,20 +27,20 @@ public class ResultDaoTest {
     @Test
     public void findById() throws Exception {
         Result result = resultDao.findById(1);
-        assertThat(result.getWinner(), is(equalTo(1)));
-        assertThat(result.getLoser(), is(equalTo(2)));
+        assertThat(result.getWinner(), is(equalTo(9)));
+        assertThat(result.getLoser(), is(equalTo(10)));
     }
 
     @Test
     public void findAll() throws Exception {
         List<Result> results = resultDao.findAll();
-        assertTrue(results.size() >= 7);
+        assertTrue(results.size() >= 11);
     }
 
     @Test
     public void findAllByTeam() {
-        List<Result> results = resultDao.findAllByTeam(2);
-        assertTrue(results.size() >= 4);
+        List<Result> results = resultDao.findAllByTeam(9);
+        assertTrue(results.size() >= 2);
     }
 
     @Test

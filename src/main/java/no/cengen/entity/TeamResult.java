@@ -1,12 +1,12 @@
 package no.cengen.entity;
 
-public class TeamResult {
+public class TeamResult implements Comparable<TeamResult> {
     private int id;
-    private int wins;
-    private int losses;
+    private Integer wins;
+    private Integer losses;
     private String name;
 
-    public TeamResult(int id, int wins, int losses, String name) {
+    public TeamResult(int id, Integer wins, Integer losses, String name) {
         this.id = id;
         this.wins = wins;
         this.losses = losses;
@@ -29,7 +29,7 @@ public class TeamResult {
         return wins;
     }
 
-    public void setWins(int wins) {
+    public void setWins(Integer wins) {
         this.wins = wins;
     }
 
@@ -37,7 +37,7 @@ public class TeamResult {
         return losses;
     }
 
-    public void setLosses(int losses) {
+    public void setLosses(Integer losses) {
         this.losses = losses;
     }
 
@@ -47,5 +47,10 @@ public class TeamResult {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    @Override
+    public int compareTo(TeamResult o) {
+        return o.wins.compareTo(this.wins);
     }
 }
