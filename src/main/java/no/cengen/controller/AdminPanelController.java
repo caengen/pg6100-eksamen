@@ -28,16 +28,19 @@ public class AdminPanelController {
     public List<TeamResult> getTeams(String game) {
         List<Team> teams = esportDto.getTeams(game);
         List<Result> results = resultDao.findAll();
-        List<TeamResult> teamResults = new ArrayList<>();
+        List<TeamResult> teamResults = aggregateTeamResults(teams, results);
+        Collections.sort(teamResults);
+        return teamResults;
+    }
 
+    private List<TeamResult> aggregateTeamResults(List<Team> teams, List<Result> results) {
+        List<TeamResult> teamResults = new ArrayList<>();
         for (Team t : teams) {
             int wins = (int) results.stream().filter(r -> r.getWinner() == t.getId()).count();
             int losses = (int) results.stream().filter(r -> r.getLoser() == t.getId()).count();
             TeamResult teamResult = new TeamResult(t.getId(), wins, losses, t.getName());
             teamResults.add(teamResult);
         }
-
-        Collections.sort(teamResults);
         return teamResults;
     }
 
