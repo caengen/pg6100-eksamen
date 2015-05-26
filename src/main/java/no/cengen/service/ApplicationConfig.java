@@ -10,8 +10,10 @@ public class ApplicationConfig extends Application {
 
     @Override
     public Set<Class<?>> getClasses() {
-        Set<Class<?>> classes = new HashSet<>();
-        //classes.add(StudentService.class); TODO: FJERN
-        return classes;
+        Set<Class<?>> resources = new HashSet<>();
+        resources.add(TeamService.class);
+        resources.add(GameService.class);
+
+        return resources;
     }
 }

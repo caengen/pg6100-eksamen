@@ -1,6 +1,6 @@
 package no.cengen.infrastructure;
 
-import no.cengen.external.service.Team;
+import no.cengen.soap.service.Team;
 import org.junit.Before;
 import org.junit.Test;
 

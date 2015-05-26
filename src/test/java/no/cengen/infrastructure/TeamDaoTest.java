@@ -6,6 +6,7 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
 
 
 public class TeamDaoTest {
@@ -25,5 +26,10 @@ public class TeamDaoTest {
         team.setId(1);
         teamDao.persist(team);
         assertNotNull(teamDao.findById(1));
+    }
+
+    @Test
+    public void findById_NoFound() {
+        assertNull(teamDao.findById(0));
     }
 }
