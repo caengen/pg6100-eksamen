@@ -2,10 +2,12 @@ no/cengen/service/TeamService.class
 no/cengen/soap/service/GameResponse.class
 no/cengen/entity/Team.class
 no/cengen/infrastructure/TeamDao.class
+no/cengen/entity/GameResult.class
 no/cengen/infrastructure/AppConstants.class
 no/cengen/service/GameService.class
 no/cengen/soap/service/GameResponse$Games.class
 no/cengen/soap/service/SOAPException.class
+no/cengen/infrastructure/GameResultDao.class
 no/cengen/soap/service/Team$Players.class
 no/cengen/soap/service/package-info.class
 no/cengen/soap/service/ObjectFactory.class
