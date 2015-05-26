@@ -18,8 +18,13 @@ public class EsportDto {
         port = service.getEsportServicePort();
     }
 
-    public List<String> getGames() throws SOAPException_Exception {
-        GameResponse response = port.getGames(AppConstants.CALLER_ID);
+    public List<String> getGames() {
+        GameResponse response = null;
+        try {
+            response = port.getGames(AppConstants.CALLER_ID);
+        } catch (SOAPException_Exception e) {
+            e.printStackTrace();
+        }
         return response.getGames().getGame();
     }
 

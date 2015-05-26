@@ -1,7 +1,5 @@
 no/cengen/service/TeamService.class
 no/cengen/controller/AdminPanelController.class
-no/cengen/entity/Team.class
-no/cengen/infrastructure/TeamDao.class
 no/cengen/soap/service/GameResponse$Games.class
 no/cengen/soap/service/SOAPException.class
 no/cengen/entity/Result.class
@@ -18,6 +16,7 @@ no/cengen/service/GameService.class
 no/cengen/soap/service/Team$Players.class
 no/cengen/soap/service/ObjectFactory.class
 no/cengen/soap/service/Team.class
+no/cengen/entity/TeamResult.class
 no/cengen/soap/service/EsportService_Service.class
 no/cengen/service/ApplicationConfig.class
 no/cengen/soap/service/TeamResponse$Teams.class
