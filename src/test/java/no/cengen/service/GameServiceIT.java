@@ -15,10 +15,10 @@ import static org.hamcrest.core.IsNot.not;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertThat;
 
-public class GameServiceTest {
+public class GameServiceIT {
 
     @Test
-    public void testGetAllGames() throws Exception {
+    public void getAllGames() throws Exception {
         Response response = ClientBuilder.newClient().target(BASE_URL + "/games").request().get();
         assertThat(HttpResponseCodes.SC_OK, is(equalTo(response.getStatus())));
 

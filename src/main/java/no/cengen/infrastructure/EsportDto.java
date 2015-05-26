@@ -22,9 +22,15 @@ public class EsportDto {
         return response.getGames().getGame();
     }
 
-    public List<Team> getTeams(String game) throws SOAPException_Exception {
-        TeamResponse response = port.getTeams(AppConstants.CALLER_ID, game);
-        return response.getTeams().getTeam();
+    public List<Team> getTeams(String game) {
+        List<Team> teams = new ArrayList<>();
+        try {
+            TeamResponse response = port.getTeams(AppConstants.CALLER_ID, game);
+            teams.addAll(response.getTeams().getTeam());
+        } catch (SOAPException_Exception e) {
+            e.printStackTrace();
+        }
+        return teams;
     }
 
     public List<Team> getAllTeams() {

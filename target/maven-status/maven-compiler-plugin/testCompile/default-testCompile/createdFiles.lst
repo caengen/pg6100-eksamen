@@ -1,7 +1,11 @@
+no/cengen/service/GameServiceIT.class
+no/cengen/service/TeamServiceIT$3.class
 no/cengen/infrastructure/EsportDtoTest.class
+no/cengen/service/GameServiceIT$1.class
 no/cengen/service/TestConstants.class
 no/cengen/infrastructure/TeamDaoTest.class
 no/cengen/infrastructure/H2Setup$1.class
 no/cengen/service/TeamServiceIT$1.class
 no/cengen/infrastructure/H2Setup.class
+no/cengen/service/TeamServiceIT$2.class
 no/cengen/service/TeamServiceIT.class

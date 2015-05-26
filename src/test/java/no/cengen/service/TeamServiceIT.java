@@ -9,17 +9,40 @@ import javax.ws.rs.core.GenericType;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
+import static no.cengen.service.TestConstants.BASE_URL;
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class TeamServiceIT {
 
     @Test
-    public void testGetAllTeams() throws Exception {
-        Response response = ClientBuilder.newClient().target(TestConstants.BASE_URL + "/teams").request().get();
+    public void getTeam() throws Exception {
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/teams/game/Hearthstone").request().get();
         assertEquals(HttpResponseCodes.SC_OK, response.getStatus());
 
-        List<Team> teams = response.readEntity(new GenericType<List<Team>>() {});
+        List<Team> teams = response.readEntity(new GenericType<List<Team>>() {
+        });
+        assertTrue(teams.size() > 0);
+    }
+
+    public void getTeam_NoTeams() throws Exception {
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/teams/game/asihflfa").request().get();
+        assertEquals(HttpResponseCodes.SC_OK, response.getStatus());
+
+        List<Team> teams = response.readEntity(new GenericType<List<Team>>() {
+        });
+        assertThat(teams.size(), is(0));
+    }
+
+    @Test
+    public void getAllTeams() throws Exception {
+        Response response = ClientBuilder.newClient().target(BASE_URL + "/teams").request().get();
+        assertEquals(HttpResponseCodes.SC_OK, response.getStatus());
+
+        List<Team> teams = response.readEntity(new GenericType<List<Team>>() {
+        });
         assertTrue(teams.size() > 0);
     }
 }
