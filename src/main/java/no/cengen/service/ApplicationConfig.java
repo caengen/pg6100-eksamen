@@ -13,6 +13,7 @@ public class ApplicationConfig extends Application {
         Set<Class<?>> resources = new HashSet<>();
         resources.add(TeamService.class);
         resources.add(GameService.class);
+        resources.add(ResultService.class);
 
         return resources;
     }

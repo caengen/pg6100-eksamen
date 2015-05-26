@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: no.cengen.infrastructure.EsportDtoTest
+Test set: no.cengen.service.TeamServiceIT
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.069 sec
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.922 sec - in no.cengen.service.TeamServiceIT
