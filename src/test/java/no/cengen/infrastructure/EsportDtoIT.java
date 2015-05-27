@@ -12,36 +12,36 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertTrue;
 
 public class EsportDtoIT {
-    private EsportDto esportDto;
+    private EsportServiceBean esportServiceBean;
 
     @Before
     public void setUp() {
-        esportDto = new EsportDto();
+        esportServiceBean = new EsportServiceBean();
     }
 
     @Test
     public void getGames() {
-        List<String> games = esportDto.getGames();
+        List<String> games = esportServiceBean.getGames();
         assertTrue(games.size() > 0);
     }
 
     @Test
     public void getTeams() {
-        String game = esportDto.getGames().get(0);
-        List<Team> teams = esportDto.getTeams(game);
+        String game = esportServiceBean.getGames().get(0);
+        List<Team> teams = esportServiceBean.getTeams(game);
         assertTrue(teams.size() > 0);
         teams.forEach(team -> assertThat(team.getId(), is(not(0))));
     }
 
     @Test
     public void invalidGame_getTeams() {
-        List<Team> teams = esportDto.getTeams("Test15325");
+        List<Team> teams = esportServiceBean.getTeams("Test15325");
         assertThat(teams.size(), is(0));
     }
 
     @Test
     public void getAllTeams() {
-        List<Team> teams = esportDto.getAllTeams();
+        List<Team> teams = esportServiceBean.getAllTeams();
         assertTrue(teams.size() > 0);
         teams.forEach(team -> assertThat(team.getId(), is(not(0))));
     }
