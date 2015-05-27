@@ -19,7 +19,6 @@ import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 
 public class ResultServiceIT {
-
     @Test
     public void getAllResults() throws Exception {
         Response response = ClientBuilder.newClient().target(BASE_URL + "/api/results").request().get();

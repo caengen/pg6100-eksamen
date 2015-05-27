@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: no.cengen.infrastructure.ResultDaoIT
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.373 sec - in no.cengen.infrastructure.ResultDaoIT

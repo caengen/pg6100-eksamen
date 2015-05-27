@@ -6,9 +6,9 @@
 <h:body>
     <div>
         <h1>Spilltabeller</h1>
-        <ui:repeat value="#{adminPanelController.games}" var="game">
+        <ui:repeat value="#{resultsController.games}" var="game">
             <strong>#{game}</strong>
-            <h:dataTable value="#{adminPanelController.teamResults(game)}" var="result">
+            <h:dataTable value="#{resultsController.getTeamResults(game)}" var="result">
                 <h:column>
                     <f:facet name="header">Id</f:facet>
                     #{result.getId()}

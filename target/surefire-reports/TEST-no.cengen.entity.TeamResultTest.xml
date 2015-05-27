@@ -44,7 +44,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean package wildfly:deploy"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher verify"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -66,8 +66,8 @@
   <testcase classname="no.cengen.entity.TeamResultTest" name="getName" time="0.001"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getWins" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getId" time="0"/>
-  <testcase classname="no.cengen.entity.TeamResultTest" name="setId" time="0"/>
-  <testcase classname="no.cengen.entity.TeamResultTest" name="setLosses" time="0.001"/>
+  <testcase classname="no.cengen.entity.TeamResultTest" name="setId" time="0.001"/>
+  <testcase classname="no.cengen.entity.TeamResultTest" name="setLosses" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getLosses" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getMatches" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="setName" time="0"/>
