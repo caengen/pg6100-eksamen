@@ -34,12 +34,6 @@ public class EsportServiceBeanIT {
     }
 
     @Test
-    public void invalidGame_getTeams() {
-        List<Team> teams = esportServiceBean.getTeams("Test15325");
-        assertThat(teams.size(), is(0));
-    }
-
-    @Test
     public void getAllTeams() {
         List<Team> teams = esportServiceBean.getAllTeams();
         assertTrue(teams.size() > 0);

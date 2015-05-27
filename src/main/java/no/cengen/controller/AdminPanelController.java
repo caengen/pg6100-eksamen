@@ -8,7 +8,6 @@ import no.cengen.soap.service.Team;
 import no.cengen.util.TeamResultUtil;
 
 import javax.enterprise.inject.Model;
-import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import java.util.Collections;
 import java.util.List;
@@ -26,18 +25,12 @@ public class AdminPanelController {
         return esportServiceBean.getGames();
     }
 
-    public List<TeamResult> getTeams(String game) {
+    public List<TeamResult> getTeamResults(String game) {
         List<Team> teams = esportServiceBean.getTeams(game);
         List<Result> results = resultDao.findAll();
         List<TeamResult> teamResults = teamResultUtil.aggregate(teams, results);
         Collections.sort(teamResults);
 
         return teamResults;
-    }
-
-    public String logout() {
-        FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
-
-        return "/login.xhtml";
     }
 }

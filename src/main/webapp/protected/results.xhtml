@@ -8,7 +8,7 @@
         <h1>Spilltabeller</h1>
         <ui:repeat value="#{adminPanelController.games}" var="game">
             <strong>#{game}</strong>
-            <h:dataTable value="#{adminPanelController.getTeams(game)}" var="result">
+            <h:dataTable value="#{adminPanelController.teamResults(game)}" var="result">
                 <h:column>
                     <f:facet name="header">Id</f:facet>
                     #{result.getId()}
@@ -32,8 +32,5 @@
             </h:dataTable>
         </ui:repeat>
     </div>
-    <h:form>
-        <h:commandLink value="Logout" action="#{adminPanelController.logout}"/>
-    </h:form>
 </h:body>
 </html>
