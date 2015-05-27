@@ -21,14 +21,13 @@ public class TeamService {
     @GET
     @Path("game/{game}")
     @ApiOperation(value = "Gets the teams in the matching game", response = Team.class, responseContainer = "List")
-    public Response getTeams(@PathParam("game") String game) {
+    public Response getTeamsInGame(@PathParam("game") String game) {
         return Response.ok(esportDto.getTeams(game)).build();
     }
 
-    //TODO: fix exception handlingen
     @GET
     @ApiOperation(value = "Gets all registered teams", response = Team.class, responseContainer = "List")
-    public Response getAllTeams() {
+    public Response getTeams() {
         return Response.ok(esportDto.getAllTeams()).build();
     }
 }

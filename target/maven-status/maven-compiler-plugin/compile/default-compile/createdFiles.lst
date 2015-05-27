@@ -1,11 +1,11 @@
 no/cengen/service/TeamService.class
 no/cengen/controller/AdminPanelController.class
-no/cengen/util/TeamsResultsUtil.class
 no/cengen/soap/service/GameResponse$Games.class
 no/cengen/soap/service/SOAPException.class
 no/cengen/entity/Result.class
 no/cengen/service/ResultService.class
 no/cengen/soap/service/package-info.class
+no/cengen/util/TeamResultUtil.class
 no/cengen/soap/service/TeamResponse.class
 no/cengen/infrastructure/EsportDto.class
 no/cengen/soap/service/SOAPException_Exception.class

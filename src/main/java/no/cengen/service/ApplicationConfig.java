@@ -24,15 +24,22 @@ public class ApplicationConfig extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         Set<Class<?>> resources = new HashSet<>();
-        resources.add(TeamService.class);
-        resources.add(GameService.class);
-        resources.add(ResultService.class);
+        addServiceClassesTo(resources);
+        addDocumentationClassesTo(resources);
 
+        return resources;
+    }
+
+    private void addDocumentationClassesTo(Set<Class<?>> resources) {
         resources.add(ApiListingResource.class);
         resources.add(ApiDeclarationProvider.class);
         resources.add(ApiListingResourceJSON.class);
         resources.add(ResourceListingProvider.class);
+    }
 
-        return resources;
+    private void addServiceClassesTo(Set<Class<?>> resources) {
+        resources.add(TeamService.class);
+        resources.add(GameService.class);
+        resources.add(ResultService.class);
     }
 }

@@ -3,8 +3,8 @@
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/EsportService.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/infrastructure/EsportDto.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/TeamResponse.java
-/Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/util/TeamsResultsUtil.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/ObjectFactory.java
+/Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/util/TeamResultUtil.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/SOAPException_Exception.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/Team.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/GameResponse.java

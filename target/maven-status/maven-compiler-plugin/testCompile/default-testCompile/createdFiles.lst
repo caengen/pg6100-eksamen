@@ -1,8 +1,8 @@
 no/cengen/service/TeamServiceIT$3.class
 no/cengen/infrastructure/ResultDaoTest.class
 no/cengen/service/TestConstants.class
-no/cengen/util/TeamsResultsUtilTest.class
 no/cengen/service/ResultServiceIT$1.class
+no/cengen/util/TeamResultUtilTest.class
 no/cengen/entity/ResultTest.class
 no/cengen/service/TeamServiceIT.class
 no/cengen/service/GameServiceIT.class

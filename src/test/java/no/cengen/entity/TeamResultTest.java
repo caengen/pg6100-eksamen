@@ -1,5 +1,6 @@
 package no.cengen.entity;
 
+import no.cengen.TeamResult;
 import org.junit.Before;
 import org.junit.Test;
 

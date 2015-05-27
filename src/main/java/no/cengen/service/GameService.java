@@ -18,13 +18,12 @@ import javax.ws.rs.core.Response;
 @Consumes(MediaType.APPLICATION_JSON)
 @Api(value = "/games", description = "Gets games")
 public class GameService {
-
     @Inject
     private EsportDto esportDto;
 
     @GET
     @ApiOperation(value = "Get all registered games", response = String.class, responseContainer = "List")
-    public Response getAllGames() throws SOAPException_Exception {
+    public Response getGames() throws SOAPException_Exception {
         return Response.ok(esportDto.getGames()).build();
     }
 }

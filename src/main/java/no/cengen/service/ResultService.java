@@ -26,7 +26,7 @@ public class ResultService {
 
     @GET
     @ApiOperation(value = "Get all registered results", response = Result.class, responseContainer = "List")
-    public Response getAllResults() {
+    public Response getResults() {
         return Response.ok(resultDao.findAll()).build();
     }
 
@@ -40,7 +40,7 @@ public class ResultService {
     @GET
     @Path("/team/id/{teamId}")
     @ApiOperation(value = "Gets all registered results for the team with the matching id", response = Result.class, responseContainer = "List")
-    public Response getResultByTeam(@PathParam("teamId") int teamId) {
+    public Response getResultsByTeam(@PathParam("teamId") int teamId) {
         return Response.ok(resultDao.findAllByTeam(teamId)).build();
     }
 

@@ -1,11 +1,11 @@
 package no.cengen.controller;
 
 import no.cengen.entity.Result;
-import no.cengen.entity.TeamResult;
+import no.cengen.TeamResult;
 import no.cengen.infrastructure.EsportDto;
 import no.cengen.infrastructure.ResultDao;
 import no.cengen.soap.service.Team;
-import no.cengen.util.TeamsResultsUtil;
+import no.cengen.util.TeamResultUtil;
 
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
@@ -21,7 +21,7 @@ public class AdminPanelController {
     @Inject
     private EsportDto esportDto;
     @Inject
-    private TeamsResultsUtil teamsResultsUtil;
+    private TeamResultUtil teamResultUtil;
 
     public List<String> getGames() {
         return esportDto.getGames();
@@ -30,7 +30,7 @@ public class AdminPanelController {
     public List<TeamResult> getTeams(String game) {
         List<Team> teams = esportDto.getTeams(game);
         List<Result> results = resultDao.findAll();
-        List<TeamResult> teamResults = teamsResultsUtil.aggregateTeamResults(teams, results);
+        List<TeamResult> teamResults = teamResultUtil.aggregate(teams, results);
 
         Collections.sort(teamResults);
         return teamResults;
