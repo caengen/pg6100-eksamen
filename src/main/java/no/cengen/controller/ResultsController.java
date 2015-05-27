@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.List;
 
 @Model
-public class AdminPanelController {
+public class ResultsController {
     @Inject
     private ResultDao resultDao;
     @Inject
