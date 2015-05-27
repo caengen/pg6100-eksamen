@@ -23,12 +23,14 @@ public class ResultDao {
 
     public List<Result> findAll() {
         TypedQuery<Result> query = em.createNamedQuery("Result.findAll", Result.class);
+
         return query.getResultList();
     }
 
     public List<Result> findAllByTeam(int id) {
         TypedQuery<Result> query = em.createNamedQuery("Result.findAllByTeam", Result.class)
                 .setParameter("teamId", id);
+
         return query.getResultList();
     }
 

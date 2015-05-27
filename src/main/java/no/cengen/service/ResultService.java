@@ -49,6 +49,7 @@ public class ResultService {
     public Response createResult(@Valid Result result) {
         resultDao.persist(result);
         URI uri = uriInfo.getAbsolutePathBuilder().path("id/" + result.getId()).build();
+
         return Response.created(uri).build();
     }
 }

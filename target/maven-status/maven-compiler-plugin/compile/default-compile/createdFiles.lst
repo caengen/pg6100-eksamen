@@ -16,7 +16,7 @@ no/cengen/service/GameService.class
 no/cengen/soap/service/Team$Players.class
 no/cengen/soap/service/ObjectFactory.class
 no/cengen/soap/service/Team.class
-no/cengen/entity/TeamResult.class
+no/cengen/TeamResult.class
 no/cengen/soap/service/EsportService_Service.class
 no/cengen/service/ApplicationConfig.class
 no/cengen/soap/service/TeamResponse$Teams.class

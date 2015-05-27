@@ -1,7 +1,7 @@
 package no.cengen.controller;
 
-import no.cengen.entity.Result;
 import no.cengen.TeamResult;
+import no.cengen.entity.Result;
 import no.cengen.infrastructure.EsportDto;
 import no.cengen.infrastructure.ResultDao;
 import no.cengen.soap.service.Team;
@@ -31,13 +31,14 @@ public class AdminPanelController {
         List<Team> teams = esportDto.getTeams(game);
         List<Result> results = resultDao.findAll();
         List<TeamResult> teamResults = teamResultUtil.aggregate(teams, results);
-
         Collections.sort(teamResults);
+
         return teamResults;
     }
 
     public String logout() {
         FacesContext.getCurrentInstance().getExternalContext().invalidateSession();
+
         return "/login.xhtml";
     }
 }

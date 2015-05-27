@@ -19,29 +19,41 @@ public class EsportDto {
     }
 
     public List<String> getGames() {
+        GameResponse response = getGameResponse();
+
+        return response.getGames().getGame();
+    }
+
+    public List<Team> getTeams(String game) {
+        return getTeamResponse(game).getTeams().getTeam();
+    }
+
+    public List<Team> getAllTeams() {
+        List<Team> teams = new ArrayList<>();
+        getGames().forEach(game -> teams.addAll(getTeams(game)));
+
+        return teams;
+    }
+
+    private GameResponse getGameResponse() {
         GameResponse response = new GameResponse();
         try {
             response = port.getGames(CALLER_ID);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return response.getGames().getGame();
+
+        return response;
     }
 
-    public List<Team> getTeams(String game) {
-        List<Team> teams = new ArrayList<>();
+    private TeamResponse getTeamResponse(String game) {
+        TeamResponse response = new TeamResponse();
         try {
-            TeamResponse response = port.getTeams(CALLER_ID, game);
-            teams.addAll(response.getTeams().getTeam());
+            response = port.getTeams(CALLER_ID, game);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return teams;
-    }
 
-    public List<Team> getAllTeams() {
-        List<Team> teams = new ArrayList<>();
-        getGames().forEach(game -> teams.addAll(getTeams(game)));
-        return teams;
+        return response;
     }
 }

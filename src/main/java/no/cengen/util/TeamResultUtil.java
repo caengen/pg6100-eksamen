@@ -12,6 +12,7 @@ import java.util.List;
 public class TeamResultUtil {
     public List<TeamResult> aggregate(List<Team> teams, List<Result> results) {
         List<TeamResult> teamResults = new ArrayList<>();
+
         for (Team t : teams) {
             int wins = countWins(results, t);
             int losses = countLosses(results, t);
