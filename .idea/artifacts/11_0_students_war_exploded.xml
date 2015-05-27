@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="11_0-students" />
+          <element id="module-output" name="pg6100-eksamen" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: com.wordnik:swagger-jaxrs_2.10:1.3.12" />
@@ -42,7 +42,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="11_0-students/web/Web" />
+      <element id="javaee-facet-resources" facet="pg6100-eksamen/web/Web" />
     </root>
   </artifact>
 </component>
