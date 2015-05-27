@@ -37,6 +37,7 @@ public class EsportServiceBean {
 
     private GameResponse getGameResponse() {
         GameResponse response = new GameResponse();
+
         try {
             response = port.getGames(CALLER_ID);
         } catch (Exception e) {
@@ -48,6 +49,7 @@ public class EsportServiceBean {
 
     private TeamResponse getTeamResponse(String game) {
         TeamResponse response = new TeamResponse();
+
         try {
             response = port.getTeams(CALLER_ID, game);
         } catch (Exception e) {

@@ -15,7 +15,6 @@ import java.util.List;
 
 @Model
 public class AdminPanelController {
-
     @Inject
     private ResultDao resultDao;
     @Inject

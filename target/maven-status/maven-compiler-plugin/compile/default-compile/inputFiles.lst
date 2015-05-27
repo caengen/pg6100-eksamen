@@ -1,7 +1,7 @@
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/infrastructure/ResultDao.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/service/ResultService.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/EsportService.java
-/Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/infrastructure/EsportDto.java
+/Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/infrastructure/EsportServiceBean.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/TeamResponse.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/target/generated-sources/wsimport/no/cengen/soap/service/ObjectFactory.java
 /Users/cengen/dev/westerdals/eksamen/pg6100-eksamen-del-1/src/main/java/no/cengen/util/TeamResultUtil.java
