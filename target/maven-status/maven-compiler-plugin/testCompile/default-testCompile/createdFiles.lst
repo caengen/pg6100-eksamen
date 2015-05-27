@@ -1,4 +1,5 @@
 no/cengen/service/TeamServiceIT$3.class
+no/cengen/controller/ResultsControllerTest.class
 no/cengen/service/TestConstants.class
 no/cengen/service/ResultServiceIT$1.class
 no/cengen/util/TeamResultUtilTest.class
@@ -8,7 +9,6 @@ no/cengen/service/GameServiceIT.class
 no/cengen/infrastructure/ResultDaoIT.class
 no/cengen/service/GameServiceIT$1.class
 no/cengen/service/ResultServiceIT$2.class
-no/cengen/controller/AdminPanelControllerTest.class
 no/cengen/entity/TeamResultTest.class
 no/cengen/infrastructure/H2Setup$1.class
 no/cengen/service/TeamServiceIT$1.class

@@ -45,7 +45,7 @@ public class ResultService {
     }
 
     @POST
-    @ApiOperation(value = "Add a new result")
+    @ApiOperation(value = "Add a new result", consumes = "application/json")
     public Response createResult(@Valid Result result) {
         resultDao.persist(result);
         URI uri = uriInfo.getAbsolutePathBuilder().path("id/" + result.getId()).build();

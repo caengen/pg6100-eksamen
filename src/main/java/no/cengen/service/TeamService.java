@@ -19,15 +19,15 @@ public class TeamService {
     private EsportServiceBean esportServiceBean;
 
     @GET
+    @ApiOperation(value = "Gets all registered teams", response = Team.class, responseContainer = "List")
+    public Response getTeams() {
+        return Response.ok(esportServiceBean.getAllTeams()).build();
+    }
+
+    @GET
     @Path("game/{game}")
     @ApiOperation(value = "Gets the teams in the matching game", response = Team.class, responseContainer = "List")
     public Response getTeamsInGame(@PathParam("game") String game) {
         return Response.ok(esportServiceBean.getTeams(game)).build();
-    }
-
-    @GET
-    @ApiOperation(value = "Gets all registered teams", response = Team.class, responseContainer = "List")
-    public Response getTeams() {
-        return Response.ok(esportServiceBean.getAllTeams()).build();
     }
 }

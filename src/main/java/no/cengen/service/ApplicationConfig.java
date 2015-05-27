@@ -16,7 +16,7 @@ public class ApplicationConfig extends Application {
     public ApplicationConfig() {
         BeanConfig beanConfig = new BeanConfig();
         beanConfig.setVersion("1.0.2");
-        beanConfig.setBasePath("http://localhost:8080/11_0-students-1.0-SNAPSHOT/api/");
+        beanConfig.setBasePath("http://localhost:8080/pg6100-eksamen-1.0-SNAPSHOT/api");
         beanConfig.setResourcePackage("no.cengen.service");
         beanConfig.setScan(true);
     }
