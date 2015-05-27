@@ -1,9 +1,0 @@
--------------------------------------------------------------------------------
-Test set: no.cengen.infrastructure.EsportServiceBeanIT
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 2.255 sec <<< FAILURE! - in no.cengen.infrastructure.EsportServiceBeanIT
-invalidGame_getTeams(no.cengen.infrastructure.EsportServiceBeanIT)  Time elapsed: 0.341 sec  <<< ERROR!
-java.lang.NullPointerException: null
-	at no.cengen.infrastructure.EsportServiceBean.getTeams(EsportServiceBean.java:28)
-	at no.cengen.infrastructure.EsportServiceBeanIT.invalidGame_getTeams(EsportServiceBeanIT.java:38)
-

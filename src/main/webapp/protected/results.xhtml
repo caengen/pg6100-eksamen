@@ -5,7 +5,7 @@
       xmlns:f="http://java.sun.com/jsf/core">
 <h:body>
     <div>
-        <h1>Match Results</h1>
+        <h1>Spilltabeller</h1>
         <ui:repeat value="#{adminPanelController.games}" var="game">
             <strong>#{game}</strong>
             <h:dataTable value="#{adminPanelController.getTeams(game)}" var="result">
