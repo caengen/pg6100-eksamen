@@ -2,33 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d8b07e-0e03-4980-8c8c-f90609e4f92e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-no.cengen.infrastructure.EsportServiceBeanIT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-no.cengen.infrastructure.ResultDaoIT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-no.cengen.service.GameServiceIT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-no.cengen.service.ResultServiceIT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/TEST-no.cengen.service.TeamServiceIT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/failsafe-summary.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/no.cengen.infrastructure.EsportServiceBeanIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/no.cengen.infrastructure.ResultDaoIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/no.cengen.service.GameServiceIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/no.cengen.service.ResultServiceIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/failsafe-reports/no.cengen.service.TeamServiceIT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/protected/admin.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.infrastructure.ResultDaoTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/no.cengen.infrastructure.ResultDaoTest.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/protected/admin.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/protected/results.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/cengen/infrastructure/EsportServiceBean.class" afterPath="$PROJECT_DIR$/target/classes/no/cengen/infrastructure/EsportServiceBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/infrastructure/EsportServiceBean.class" afterPath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/infrastructure/EsportServiceBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.entity.ResultTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.entity.ResultTest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.entity.TeamResultTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.entity.TeamResultTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.util.TeamResultUtilTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.util.TeamResultUtilTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/error.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/error.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/error.xhtml" afterPath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/error.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/no.cengen.entity.ResultTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/no.cengen.entity.ResultTest.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/no.cengen.entity.TeamResultTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/no.cengen.entity.TeamResultTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/no.cengen.util.TeamResultUtilTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/no.cengen.util.TeamResultUtilTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/protected/results.xhtml" afterPath="$PROJECT_DIR$/target/pg6100-eksamen-1.0-SNAPSHOT/protected/results.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="11_0-students.iws" />
@@ -89,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="705">
-              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -105,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results.xhtml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="results.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/results.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21428572" vertical-offset="15" max-vertical-offset="660">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="660">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -120,6 +102,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
               <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.xhtml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/error.xhtml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.17857143" vertical-offset="0" max-vertical-offset="420">
+              <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
               <folding />
             </state>
           </provider>
@@ -164,7 +156,6 @@
         <option value="$PROJECT_DIR$/src/main/k.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/no/cengen/servlet/LoginServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/error.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/protected/home.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/no/cengen/entity/Team.java" />
         <option value="$PROJECT_DIR$/src/test/java/no/cengen/infrastructure/TeamResultDaoTest.java" />
@@ -196,6 +187,7 @@
         <option value="$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportServiceBean.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/protected/results.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/error.xhtml" />
       </list>
     </option>
   </component>
@@ -1094,12 +1086,12 @@
       <workItem from="1432628325146" duration="3259000" />
       <workItem from="1432631658649" duration="4332000" />
       <workItem from="1432636046388" duration="30981000" />
-      <workItem from="1432721981925" duration="4251000" />
+      <workItem from="1432721981925" duration="4468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47665000" />
+    <option name="totallyTimeSpent" value="47882000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -1480,14 +1472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
-          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/no/cengen/util/TeamResultUtilTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="329" max-vertical-offset="1005">
@@ -1617,6 +1601,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jboss-web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="444">
@@ -1628,23 +1620,23 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="261" max-vertical-offset="705">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="345">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/protected/results.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21428572" vertical-offset="15" max-vertical-offset="660">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="660">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17857143" vertical-offset="0" max-vertical-offset="420">
+          <caret line="5" column="75" selection-start-line="5" selection-start-column="75" selection-end-line="5" selection-end-column="75" />
           <folding />
         </state>
       </provider>
