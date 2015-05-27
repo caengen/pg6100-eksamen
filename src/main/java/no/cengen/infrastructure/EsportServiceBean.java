@@ -24,17 +24,6 @@ public class EsportServiceBean {
         return response.getGames().getGame();
     }
 
-    public List<Team> getTeams(String game) {
-        return getTeamResponse(game).getTeams().getTeam();
-    }
-
-    public List<Team> getAllTeams() {
-        List<Team> teams = new ArrayList<>();
-        getGames().forEach(game -> teams.addAll(getTeams(game)));
-
-        return teams;
-    }
-
     private GameResponse getGameResponse() {
         GameResponse response = new GameResponse();
 
@@ -45,6 +34,17 @@ public class EsportServiceBean {
         }
 
         return response;
+    }
+
+    public List<Team> getAllTeams() {
+        List<Team> teams = new ArrayList<>();
+        getGames().forEach(game -> teams.addAll(getTeams(game)));
+
+        return teams;
+    }
+
+    public List<Team> getTeams(String game) {
+        return getTeamResponse(game).getTeams().getTeam();
     }
 
     private TeamResponse getTeamResponse(String game) {
