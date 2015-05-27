@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="10" failures="0" name="no.cengen.entity.TeamResultTest" time="0" errors="0" skipped="0">
+<testsuite tests="10" failures="0" name="no.cengen.entity.TeamResultTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home/jre/lib"/>
@@ -64,12 +64,12 @@
   </properties>
   <testcase classname="no.cengen.entity.TeamResultTest" name="compareTo" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getName" time="0"/>
-  <testcase classname="no.cengen.entity.TeamResultTest" name="getWins" time="0"/>
+  <testcase classname="no.cengen.entity.TeamResultTest" name="getWins" time="0.001"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getId" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="setId" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="setLosses" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getLosses" time="0"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="getMatches" time="0"/>
-  <testcase classname="no.cengen.entity.TeamResultTest" name="setName" time="0"/>
+  <testcase classname="no.cengen.entity.TeamResultTest" name="setName" time="0.001"/>
   <testcase classname="no.cengen.entity.TeamResultTest" name="setWins" time="0"/>
 </testsuite>
