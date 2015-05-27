@@ -6,13 +6,13 @@ no/cengen/controller/ResultsController.class
 no/cengen/entity/Result.class
 no/cengen/service/ResultService.class
 no/cengen/soap/service/package-info.class
-no/cengen/util/TeamResultUtil.class
 no/cengen/soap/service/TeamResponse.class
 no/cengen/soap/service/SOAPException_Exception.class
 no/cengen/soap/service/EsportService.class
 no/cengen/soap/service/GameResponse.class
 no/cengen/infrastructure/ResultDao.class
 no/cengen/service/GameService.class
+no/cengen/TeamResultAggregator.class
 no/cengen/soap/service/Team$Players.class
 no/cengen/soap/service/ObjectFactory.class
 no/cengen/soap/service/Team.class

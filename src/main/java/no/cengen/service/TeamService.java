@@ -21,13 +21,13 @@ public class TeamService {
     @GET
     @ApiOperation(value = "Gets all registered teams", response = Team.class, responseContainer = "List")
     public Response getTeams() {
-        return Response.ok(manager.getAllTeams()).build();
+        return Response.ok(manager.getTeams()).build();
     }
 
     @GET
     @Path("game/{game}")
     @ApiOperation(value = "Gets the teams in the matching game", response = Team.class, responseContainer = "List")
     public Response getTeamsInGame(@PathParam("game") String game) {
-        return Response.ok(manager.getTeams(game)).build();
+        return Response.ok(manager.getTeamsByGame(game)).build();
     }
 }

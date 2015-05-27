@@ -5,7 +5,7 @@ import no.cengen.entity.Result;
 import no.cengen.infrastructure.EsportServiceManager;
 import no.cengen.infrastructure.ResultDao;
 import no.cengen.soap.service.Team;
-import no.cengen.util.TeamResultUtil;
+import no.cengen.TeamResultAggregator;
 
 import javax.enterprise.inject.Model;
 import javax.inject.Inject;
@@ -19,16 +19,16 @@ public class ResultsController {
     @Inject
     private EsportServiceManager manager;
     @Inject
-    private TeamResultUtil teamResultUtil;
+    private TeamResultAggregator aggregator;
 
     public List<String> getGames() {
         return manager.getGames();
     }
 
     public List<TeamResult> getTeamResults(String game) {
-        List<Team> teams = manager.getTeams(game);
+        List<Team> teams = manager.getTeamsByGame(game);
         List<Result> results = resultDao.findAll();
-        List<TeamResult> teamResults = teamResultUtil.aggregate(teams, results);
+        List<TeamResult> teamResults = aggregator.aggregate(teams, results);
         Collections.sort(teamResults);
 
         return teamResults;

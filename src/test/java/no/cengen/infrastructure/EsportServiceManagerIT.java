@@ -28,14 +28,14 @@ public class EsportServiceManagerIT {
     @Test
     public void getTeams() {
         String game = manager.getGames().get(0);
-        List<Team> teams = manager.getTeams(game);
+        List<Team> teams = manager.getTeamsByGame(game);
         assertTrue(teams.size() > 0);
         teams.forEach(team -> assertThat(team.getId(), is(not(0))));
     }
 
     @Test
     public void getAllTeams() {
-        List<Team> teams = manager.getAllTeams();
+        List<Team> teams = manager.getTeams();
         assertTrue(teams.size() > 0);
         teams.forEach(team -> assertThat(team.getId(), is(not(0))));
     }

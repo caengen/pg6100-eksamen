@@ -3,7 +3,7 @@ package no.cengen.controller;
 import no.cengen.TeamResult;
 import no.cengen.infrastructure.EsportServiceManager;
 import no.cengen.infrastructure.ResultDao;
-import no.cengen.util.TeamResultUtil;
+import no.cengen.TeamResultAggregator;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +26,7 @@ public class ResultsControllerTest {
     @Mock
     private EsportServiceManager manager;
     @Mock
-    private TeamResultUtil teamResultUtil;
+    private TeamResultAggregator teamResultAggregator;
     @InjectMocks
     private ResultsController resultsController;
 
@@ -50,10 +50,10 @@ public class ResultsControllerTest {
     @Test
     public void getTeamResults() {
         List<TeamResult> teamResults = resultsController.getTeamResults("test");
-        verify(manager, times(2)).getTeams(anyString());
+        verify(manager, times(2)).getTeamsByGame(anyString());
         verify(resultDao, times(2)).findAll();
-        verify(teamResultUtil).aggregate(anyList(), anyList());
-        verifyNoMoreInteractions(manager, resultDao, teamResultUtil);
+        verify(teamResultAggregator).aggregate(anyList(), anyList());
+        verifyNoMoreInteractions(manager, resultDao, teamResultAggregator);
         assertThat(teamResults.size(), is(2));
     }
 }

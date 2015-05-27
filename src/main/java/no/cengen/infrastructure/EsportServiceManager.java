@@ -19,13 +19,18 @@ public class EsportServiceManager {
     }
 
     public List<String> getGames() {
-        GameResponse response = getGameResponse();
+        List<String> games = new ArrayList<>();
 
-        return response.getGames().getGame();
+        GameResponse response = getGameResponse();
+        if (response != null) {
+            games.addAll(response.getGames().getGame());
+        }
+
+        return games;
     }
 
     private GameResponse getGameResponse() {
-        GameResponse response = new GameResponse();
+        GameResponse response = null;
 
         try {
             response = port.getGames(CALLER_ID);
@@ -36,19 +41,26 @@ public class EsportServiceManager {
         return response;
     }
 
-    public List<Team> getAllTeams() {
+    public List<Team> getTeams() {
         List<Team> teams = new ArrayList<>();
-        getGames().forEach(game -> teams.addAll(getTeams(game)));
+
+        getGames().forEach(game -> teams.addAll(getTeamsByGame(game)));
 
         return teams;
     }
 
-    public List<Team> getTeams(String game) {
-        return getTeamResponse(game).getTeams().getTeam();
+    public List<Team> getTeamsByGame(String game) {
+        List<Team> teams = new ArrayList<>();
+
+        TeamResponse response = getTeamResponse(game);
+        if (response != null)
+            teams.addAll(response.getTeams().getTeam());
+
+        return teams;
     }
 
     private TeamResponse getTeamResponse(String game) {
-        TeamResponse response = new TeamResponse();
+        TeamResponse response = null;
 
         try {
             response = port.getTeams(CALLER_ID, game);
