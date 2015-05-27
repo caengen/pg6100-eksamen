@@ -4,6 +4,7 @@ no/cengen/service/TestConstants.class
 no/cengen/service/ResultServiceIT$1.class
 no/cengen/util/TeamResultUtilTest.class
 no/cengen/entity/ResultTest.class
+no/cengen/infrastructure/EsportServiceManagerIT.class
 no/cengen/service/TeamServiceIT.class
 no/cengen/service/GameServiceIT.class
 no/cengen/infrastructure/ResultDaoIT.class
@@ -15,4 +16,3 @@ no/cengen/service/TeamServiceIT$1.class
 no/cengen/infrastructure/H2Setup.class
 no/cengen/service/TeamServiceIT$2.class
 no/cengen/service/ResultServiceIT.class
-no/cengen/infrastructure/EsportServiceBeanIT.class

@@ -2,7 +2,7 @@ package no.cengen.service;
 
 import com.wordnik.swagger.annotations.Api;
 import com.wordnik.swagger.annotations.ApiOperation;
-import no.cengen.infrastructure.EsportServiceBean;
+import no.cengen.infrastructure.EsportServiceManager;
 import no.cengen.soap.service.Team;
 
 import javax.inject.Inject;
@@ -16,18 +16,18 @@ import javax.ws.rs.core.Response;
 @Api(value = "/teams", description = "Gets teams")
 public class TeamService {
     @Inject
-    private EsportServiceBean esportServiceBean;
+    private EsportServiceManager manager;
 
     @GET
     @ApiOperation(value = "Gets all registered teams", response = Team.class, responseContainer = "List")
     public Response getTeams() {
-        return Response.ok(esportServiceBean.getAllTeams()).build();
+        return Response.ok(manager.getAllTeams()).build();
     }
 
     @GET
     @Path("game/{game}")
     @ApiOperation(value = "Gets the teams in the matching game", response = Team.class, responseContainer = "List")
     public Response getTeamsInGame(@PathParam("game") String game) {
-        return Response.ok(esportServiceBean.getTeams(game)).build();
+        return Response.ok(manager.getTeams(game)).build();
     }
 }
