@@ -25,38 +25,31 @@ public class ResultTest {
 
     @Test
     public void noViolations_result() {
-        Set<ConstraintViolation<Result>> violations = validator.validate(newTestResult(4, 3));
+        Set<ConstraintViolation<Result>> violations = validator.validate(new Result(4, 3));
         assertThat(violations.size(), is(0));
     }
 
     @Test
     public void minViolations_forWinner() {
-        Set<ConstraintViolation<Result>> violations = validator.validate(newTestResult(0, 3));
+        Set<ConstraintViolation<Result>> violations = validator.validate(new Result(0, 3));
         assertThat(violations.size(), is(1));
     }
 
     @Test
     public void minViolations_forLoser() {
-        Set<ConstraintViolation<Result>> violations = validator.validate(newTestResult(3, 0));
+        Set<ConstraintViolation<Result>> violations = validator.validate(new Result(3, 0));
         assertThat(violations.size(), is(1));
     }
 
     @Test
     public void nullViolations_forWinner() {
-        Set<ConstraintViolation<Result>> violations = validator.validate(newTestResult(null, 3));
+        Set<ConstraintViolation<Result>> violations = validator.validate(new Result(null, 3));
         assertThat(violations.size(), is(1));
     }
 
     @Test
     public void nullViolations_forLoser() {
-        Set<ConstraintViolation<Result>> violations = validator.validate(newTestResult(3, null));
+        Set<ConstraintViolation<Result>> violations = validator.validate(new Result(3, null));
         assertThat(violations.size(), is(1));
-    }
-
-    private Result newTestResult(Integer winner, Integer loser) {
-        Result result = new Result();
-        result.setWinner(winner);
-        result.setLoser(loser);
-        return result;
     }
 }
