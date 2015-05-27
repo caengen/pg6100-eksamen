@@ -30,6 +30,7 @@ public class AdminPanelController {
         List<Result> results = resultDao.findAll();
         List<TeamResult> teamResults = aggregateTeamResults(teams, results);
         Collections.sort(teamResults);
+        Collections.reverse(teamResults);
         return teamResults;
     }
 

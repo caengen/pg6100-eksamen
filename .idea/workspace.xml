@@ -2,15 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64d8b07e-0e03-4980-8c8c-f90609e4f92e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT.war" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/no/cengen/entity/TeamResultTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/AppConstants.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT.war" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/infrastructure/AppConstants.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/no/cengen/infrastructure/AppConstants.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/controller/AdminPanelController.class" afterPath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/controller/AdminPanelController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/cengen/controller/AdminPanelController.class" afterPath="$PROJECT_DIR$/target/classes/no/cengen/controller/AdminPanelController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/infrastructure/AppConstants.class" afterPath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/infrastructure/AppConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/cengen/infrastructure/AppConstants.class" afterPath="$PROJECT_DIR$/target/classes/no/cengen/infrastructure/AppConstants.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/no/cengen/entity/ResultTest.java" afterPath="$PROJECT_DIR$/src/test/java/no/cengen/entity/ResultTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/infrastructure/EsportDto.class" afterPath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/infrastructure/EsportDto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/cengen/infrastructure/EsportDto.class" afterPath="$PROJECT_DIR$/target/classes/no/cengen/infrastructure/EsportDto.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/entity/TeamResult.class" afterPath="$PROJECT_DIR$/target/11_0-students-1.0-SNAPSHOT/WEB-INF/classes/no/cengen/entity/TeamResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/no/cengen/entity/TeamResult.class" afterPath="$PROJECT_DIR$/target/classes/no/cengen/entity/TeamResult.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/cengen/controller/AdminPanelController.java" afterPath="$PROJECT_DIR$/src/main/java/no/cengen/controller/AdminPanelController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportDto.java" afterPath="$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportDto.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.entity.ResultTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.entity.ResultTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.infrastructure.EsportDtoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.infrastructure.EsportDtoTest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.infrastructure.ResultDaoTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-no.cengen.infrastructure.ResultDaoTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/no/cengen/entity/TeamResult.java" afterPath="$PROJECT_DIR$/src/main/java/no/cengen/entity/TeamResult.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/no.cengen.entity.ResultTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/no.cengen.entity.ResultTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/no.cengen.infrastructure.EsportDtoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/no.cengen.infrastructure.EsportDtoTest.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/no.cengen.infrastructure.ResultDaoTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/no.cengen.infrastructure.ResultDaoTest.txt" />
@@ -45,25 +58,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/entity/Result.java">
+      <file leaf-file-name="TeamService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/service/TeamService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="362" max-vertical-offset="810">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="540">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1233#1234#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResultTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/no/cengen/entity/ResultTest.java">
+      <file leaf-file-name="EsportDto.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7635135" vertical-offset="456" max-vertical-offset="900">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.6621622" vertical-offset="381" max-vertical-offset="825">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,7 +135,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/protected/admin.xhtml" />
         <option value="$PROJECT_DIR$/src/main/resources/init.sql" />
         <option value="$PROJECT_DIR$/src/test/java/no/cengen/infrastructure/ResultDaoTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/no/cengen/entity/TeamResult.java" />
         <option value="$PROJECT_DIR$/src/test/java/no/cengen/service/GameServiceIT.java" />
         <option value="$PROJECT_DIR$/src/test/java/no/cengen/service/TeamServiceIT.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -133,10 +143,12 @@
         <option value="$PROJECT_DIR$/src/main/java/no/cengen/service/TeamService.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/cengen/service/ApplicationConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/cengen/service/ResultService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/no/cengen/controller/AdminPanelController.java" />
         <option value="$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/AppConstants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportDto.java" />
         <option value="$PROJECT_DIR$/src/test/java/no/cengen/entity/ResultTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/no/cengen/entity/TeamResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/no/cengen/entity/TeamResultTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/no/cengen/controller/AdminPanelController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportDto.java" />
       </list>
     </option>
   </component>
@@ -234,6 +246,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="11_0-students" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eksamen_opg1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cengen" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -406,35 +444,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ResultTest">
-    <configuration default="false" name="ResultDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="no.cengen.infrastructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="11_0-students" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" value="" />
-      <option name="PACKAGE_NAME" value="no.cengen.infrastructure" />
-      <option name="MAIN_CLASS_NAME" value="no.cengen.infrastructure.ResultDaoTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TeamResultTest.compareTo">
     <configuration default="false" name="GameServiceIT.getAllGames" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -533,6 +543,34 @@
       <option name="MAIN_CLASS_NAME" value="no.cengen.entity.ResultTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TeamResultTest.compareTo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="no.cengen.entity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="11_0-students" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="no.cengen.entity" />
+      <option name="MAIN_CLASS_NAME" value="no.cengen.entity.TeamResultTest" />
+      <option name="METHOD_NAME" value="compareTo" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -897,19 +935,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="JUnit.Run all tests" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ResultDaoTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameServiceIT.getAllGames" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ResultServiceIT" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TeamServiceIT" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.ResultTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameServiceIT.getAllGames" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ResultServiceIT" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TeamServiceIT" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ResultTest" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TeamResultTest.compareTo" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ResultTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TeamServiceIT" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ResultServiceIT" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.GameServiceIT.getAllGames" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ResultDaoTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TeamResultTest.compareTo" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ResultTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TeamServiceIT" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ResultServiceIT" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.GameServiceIT.getAllGames" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -931,12 +969,12 @@
       <workItem from="1432623064612" duration="3999000" />
       <workItem from="1432628325146" duration="3259000" />
       <workItem from="1432631658649" duration="4332000" />
-      <workItem from="1432636046388" duration="22625000" />
+      <workItem from="1432636046388" duration="24898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35058000" />
+    <option name="totallyTimeSpent" value="37331000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -960,7 +998,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -981,7 +1019,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -1084,14 +1122,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="210">
-          <caret line="4" column="3" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/service/GameService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="480">
@@ -1151,7 +1181,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="435">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1164,14 +1197,6 @@
             <element signature="e#752#753#0" expanded="true" />
             <element signature="e#820#821#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="210">
-          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1345,50 +1370,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/service/TeamService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="540">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/entity/TeamResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="660">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/AppConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="180">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/ResultDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="480">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1065">
-          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/service/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="525">
@@ -1402,16 +1383,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="660">
           <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/controller/AdminPanelController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1429,8 +1400,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/no/cengen/entity/ResultTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7635135" vertical-offset="456" max-vertical-offset="900">
+        <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="900">
           <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/entity/TeamResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="201" max-vertical-offset="675">
+          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
+          <folding>
+            <element signature="e#1034#1035#0" expanded="true" />
+            <element signature="e#1084#1085#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/controller/AdminPanelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="111" max-vertical-offset="840">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/no/cengen/entity/TeamResultTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/ResultDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="480">
+          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/service/TeamService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="96" max-vertical-offset="540">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/generated-sources/wsimport/no/cengen/soap/service/GameResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.0405405" vertical-offset="1491" max-vertical-offset="1935">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/no/cengen/infrastructure/EsportDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6621622" vertical-offset="381" max-vertical-offset="825">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

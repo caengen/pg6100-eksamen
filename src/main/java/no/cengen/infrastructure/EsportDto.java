@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Stateless
-//TODO: feil bruk av dto
 public class EsportDto {
+    private final String CALLER_ID = "1EE3CE17-B958-5287-8E75-091887B470D3";
     private EsportService_Service service;
     private EsportService port;
 
@@ -19,9 +19,9 @@ public class EsportDto {
     }
 
     public List<String> getGames() {
-        GameResponse response = null;
+        GameResponse response = new GameResponse();
         try {
-            response = port.getGames(AppConstants.CALLER_ID);
+            response = port.getGames(CALLER_ID);
         } catch (SOAPException_Exception e) {
             e.printStackTrace();
         }
@@ -31,7 +31,7 @@ public class EsportDto {
     public List<Team> getTeams(String game) {
         List<Team> teams = new ArrayList<>();
         try {
-            TeamResponse response = port.getTeams(AppConstants.CALLER_ID, game);
+            TeamResponse response = port.getTeams(CALLER_ID, game);
             teams.addAll(response.getTeams().getTeam());
         } catch (SOAPException_Exception e) {
             e.printStackTrace();
@@ -40,28 +40,10 @@ public class EsportDto {
     }
 
     public List<Team> getAllTeams() {
-        return aggregateTeams();
-    }
-
-    private List<Team> aggregateTeams() {
         List<Team> teams = new ArrayList<>();
-        try {
-            List<String> games = getGames();
-            teams = collectTeamsFrom(games);
-        } catch (SOAPException_Exception e) {
-            e.printStackTrace();
-        }
+        getGames().forEach(game -> teams.addAll(getTeams(game)));
         return teams;
     }
-
-    private List<Team> collectTeamsFrom(List<String> games) throws SOAPException_Exception {
-        List<Team> teams = new ArrayList<>();
-        for (String game : games) {
-            teams.addAll(getTeams(game));
-        }
-        return teams;
-    }
-
     //TODO: test throws exception with invalid CALLER_ID - BOTH CASES
     //TODO: test NO TEAMS with invalid GAME - getTeams CASE
 }
