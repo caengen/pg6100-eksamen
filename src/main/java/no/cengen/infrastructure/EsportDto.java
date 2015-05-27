@@ -22,7 +22,7 @@ public class EsportDto {
         GameResponse response = new GameResponse();
         try {
             response = port.getGames(CALLER_ID);
-        } catch (SOAPException_Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return response.getGames().getGame();
@@ -33,7 +33,7 @@ public class EsportDto {
         try {
             TeamResponse response = port.getTeams(CALLER_ID, game);
             teams.addAll(response.getTeams().getTeam());
-        } catch (SOAPException_Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return teams;
@@ -44,6 +44,4 @@ public class EsportDto {
         getGames().forEach(game -> teams.addAll(getTeams(game)));
         return teams;
     }
-    //TODO: test throws exception with invalid CALLER_ID - BOTH CASES
-    //TODO: test NO TEAMS with invalid GAME - getTeams CASE
 }

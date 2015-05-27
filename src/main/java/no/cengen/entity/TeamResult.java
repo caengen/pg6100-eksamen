@@ -1,6 +1,5 @@
 package no.cengen.entity;
 
-//TODO: add tests for coverage
 public class TeamResult implements Comparable<TeamResult> {
     private int id;
     private Integer wins;
@@ -52,6 +51,6 @@ public class TeamResult implements Comparable<TeamResult> {
 
     @Override
     public int compareTo(TeamResult o) {
-        return this.wins.compareTo(o.wins);
+        return o.wins.compareTo(this.wins);
     }
 }

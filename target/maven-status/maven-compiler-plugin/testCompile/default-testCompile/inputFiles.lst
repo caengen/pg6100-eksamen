@@ -1,9 +1,11 @@
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/infrastructure/ResultDaoTest.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/entity/ResultTest.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/service/TeamServiceIT.java
+/Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/infrastructure/EsportDtoIT.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/service/ResultServiceIT.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/infrastructure/H2Setup.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/service/GameServiceIT.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/service/TestConstants.java
+/Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/util/TeamsResultsUtilTest.java
+/Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/controller/AdminPanelControllerTest.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/entity/TeamResultTest.java
-/Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/test/java/no/cengen/infrastructure/EsportDtoTest.java

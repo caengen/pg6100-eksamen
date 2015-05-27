@@ -5,6 +5,7 @@
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/main/java/no/cengen/service/ResultService.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/target/generated-sources/wsimport/no/cengen/soap/service/Team.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/target/generated-sources/wsimport/no/cengen/soap/service/SOAPException_Exception.java
+/Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/main/java/no/cengen/util/TeamsResultsUtil.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/main/java/no/cengen/infrastructure/EsportDto.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/main/java/no/cengen/entity/Result.java
 /Users/cengen/dev/westerdals/eksamen/eksamen_opg1/src/main/java/no/cengen/service/GameService.java

@@ -5,11 +5,11 @@ import no.cengen.entity.TeamResult;
 import no.cengen.infrastructure.EsportDto;
 import no.cengen.infrastructure.ResultDao;
 import no.cengen.soap.service.Team;
+import no.cengen.util.TeamsResultsUtil;
 
 import javax.enterprise.inject.Model;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
@@ -20,6 +20,8 @@ public class AdminPanelController {
     private ResultDao resultDao;
     @Inject
     private EsportDto esportDto;
+    @Inject
+    private TeamsResultsUtil teamsResultsUtil;
 
     public List<String> getGames() {
         return esportDto.getGames();
@@ -28,20 +30,9 @@ public class AdminPanelController {
     public List<TeamResult> getTeams(String game) {
         List<Team> teams = esportDto.getTeams(game);
         List<Result> results = resultDao.findAll();
-        List<TeamResult> teamResults = aggregateTeamResults(teams, results);
-        Collections.sort(teamResults);
-        Collections.reverse(teamResults);
-        return teamResults;
-    }
+        List<TeamResult> teamResults = teamsResultsUtil.aggregateTeamResults(teams, results);
 
-    private List<TeamResult> aggregateTeamResults(List<Team> teams, List<Result> results) {
-        List<TeamResult> teamResults = new ArrayList<>();
-        for (Team t : teams) {
-            int wins = (int) results.stream().filter(r -> r.getWinner() == t.getId()).count();
-            int losses = (int) results.stream().filter(r -> r.getLoser() == t.getId()).count();
-            TeamResult teamResult = new TeamResult(t.getId(), wins, losses, t.getName());
-            teamResults.add(teamResult);
-        }
+        Collections.sort(teamResults);
         return teamResults;
     }
 
