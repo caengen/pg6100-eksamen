@@ -23,10 +23,12 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="11_0-students" />
+        <module name="pg6100-eksamen" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="11_0-students" target="1.8" />
+      <module name="pg6100-eksamen" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
